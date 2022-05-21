@@ -19,8 +19,8 @@ namespace TestNinja.UnitTests.Mocking
 
         [Test]
         public void ReadVideoFile_EmptyFile_ReturnErrorMessage()
-        {            
-            _fileReader.Setup(fr => fr.Read("video.txt")).Returns("");            
+        {
+            _fileReader.Setup(fr => fr.Read("video.txt")).Returns("");
             var result = _videoService.ReadVideoTitle();
             Assert.That(result, Does.Contain("error").IgnoreCase);
         }

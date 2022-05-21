@@ -1,7 +1,6 @@
 ﻿using Moq;
 using NUnit.Framework;
 using System;
-using TestNinja.Fundamentals;
 using TestNinja.Mocking;
 
 namespace TestNinja.UnitTests.Mocking
